@@ -5,16 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>덕담 하나 주면 안잡아먹지!</title>
+    <!-- <script src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/free_newyear_2022.js"></script>
+    <script>
+      const mycode = '1f3870be274f6c49b3e31a0c6728957f';
+    </script> -->
   </head>
   <body>
     <div class="background w-screen h-screen max-w-[32rem] bg-center bg-cover m-auto py-5">
       <div class="text-center text-neutral-700">
         <h1 class="text-xl bg-white rounded-3xl inline-block py-2 px-5">덕담 하나 주면 안잡아먹지!</h1>
-
         <button
           class="text-md z-0 fixed bottom-5 left-1/2 -translate-x-1/2 mx-auto bg-cyan-500 text-white pointer rounded-2xl px-8 py-5 hover:bg-cyan-600">
           민지님에게 덕담 남기기
         </button>
+        <ul>
+          <li>
+            <img src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png" alt="쪽지" />
+          </li>
+        </ul>
       </div>
     </div>
     <div class="hidden w-screen h-screen bg-slate-700 opacity-80 absolute top-0 z-10"></div>
@@ -35,6 +43,12 @@
           덕담 남기기 완료 !
         </button>
       </fieldset>
+    </div>
+    <div
+      class="msg-modal z-20 w-3/4 max-w-md absolute top-1/4 left-1/2 -translate-x-1/2 bg-slate-200 rounded-3xl text-center p-6">
+      <h3 class="text-xl">00님의 쪽지가 도착했습니다</h3>
+      <button class="absolute top-2 right-5">X</button>
+      <div class="msg-modal-contents bg-white p-5 rounded-2xl mt-5">야 우리 모시기 저기기</div>
     </div>
   </body>
 </html>
