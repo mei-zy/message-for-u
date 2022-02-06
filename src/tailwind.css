@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'SANJUGotgam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'SANJUGotgam', Courier, monospace;
+}
+.background {
+  background-image: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/bg_default.png');
+}
