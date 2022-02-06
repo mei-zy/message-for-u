@@ -9,7 +9,6 @@
     "es2021": true
   },
   "globals": { "_": true },
-  "parser": "babel-eslint",
   "plugins": ["import", "html"],
   "extends": ["airbnb-base", "prettier"],
   "rules": {
