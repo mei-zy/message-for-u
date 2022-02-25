@@ -1,9 +1,9 @@
 import './tailwind.css';
 import renderInitData from './js/showInitData';
-import addMessages from './js/addMessages';
+import bindEventAddMessages from './js/addMessages';
 
 const init = () => {
   renderInitData();
-  addMessages();
+  bindEventAddMessages();
 };
 window.addEventListener('DOMContentLoaded', init);
