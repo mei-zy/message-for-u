@@ -19,10 +19,16 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.js'],
+  },
   devServer: {
     static: { directory: path.join(__dirname, 'dist') },
     open: true,
     port: 'auto',
+    proxy: {
+      '/': 'http://localhost:7001',
+    },
   },
   devtool: 'source-map',
   mode: 'development',
