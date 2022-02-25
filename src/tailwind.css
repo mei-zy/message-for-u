@@ -17,3 +17,14 @@ body {
   background-image: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/bg_default.png');
   background-image: url('https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/bg_final.png');
 }
+/* .msg-view {
+  position: absolute;
+  top: 400px;
+  left: 100px;
+} */
+.msg-complete:hover:enabled {
+  background-color: rgb(2 132 199);
+}
+.msg-complete:disabled {
+  background-color: rgb(156 163 175);
+}
