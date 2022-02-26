@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'SANJUGotgam';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANJUGotgam.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noons_2112@1.0/SANJUGotgam.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,4 +27,13 @@ body {
 }
 .msg-complete:disabled {
   background-color: rgb(156 163 175);
+}
+
+picture {
+  background-color: red;
+}
+img,
+source {
+  width: 140px;
+  height: 140px;
 }

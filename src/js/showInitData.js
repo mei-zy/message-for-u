@@ -33,9 +33,14 @@ const renderInitData = async () => {
         const topLocation = Math.floor(Math.random() * 301) + 50;
         const leftLocation = Math.floor(Math.random() * 301) + 100;
 
-        return `<li class="absolute" style="top:${topLocation}px; left:${leftLocation}px">
-          <img class="inline msg-view" data-id=${number} src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png" alt=${msg.writer} />
-          </li>`;
+        return `
+          <li class="absolute" style="top:${topLocation}px; left:${leftLocation}px">
+          <picture class="inline msg-view" data-id=${number}>
+            <source srcset="https://media.vlpt.us/images/mingsomm/post/4dd33134-ff8a-4406-a77e-9b4b00fa8916/object3.webp" type="image/webp" />
+            <img src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png" alt=${msg.writer} />
+          </picture>
+            
+            </li>`;
       })
       .join('');
 

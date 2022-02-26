@@ -28,9 +28,10 @@ const addMsg = async (writer, content) => {
 
     $('.msg-list').innerHTML += `
     <li class="absolute" style="top:${topLocation}px; left:${leftLocation}px">
-      <img class="inline msg-view" data-id=${
-        data.length - 1
-      } src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png" alt=${writer} />
+     <picture class="inline msg-view" data-id=${data.length - 1}>
+      <source style="width:150px; height:150px" srcset="https://media.vlpt.us/images/mingsomm/post/4dd33134-ff8a-4406-a77e-9b4b00fa8916/object3.webp" type="image/webp" />
+        <img src="https://2022-01-newyear.s3.ap-northeast-2.amazonaws.com/object3.png" alt=${writer} />
+     </picture>
     </li>`;
   } catch (e) {
     console.log(e);
