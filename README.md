@@ -66,9 +66,29 @@ $('.msg-list').innerHTML += `
 
 - 초기 light house 를 이용한 성능 확인
 
+```
 1. 이미지 webp 사용
 2. 이미지 width, height 지정하여 랜더될 때 미리 계산
-3. meta 태그 적극 사용하여 SEO 개선
+3. meta 태그 사용하여 SEO 개선
+```
+
+![](https://images.velog.io/images/mingsomm/post/159ca91d-0ffe-4983-9c83-ffa3b57fa6aa/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-02-26%2022.00.22.png)
+
+### 미해결 부분
+
+```
+1. Performance
+- 스파르타코딩 서버에서 받아오는 img 이기 때문에 local 에 있는 img보다 성능 저하
+- javascript minify(경량화) 문제 - terser-webpack-plugin 으로 배포시, 압축 예정
+- web font - 지난번 프로젝트에서도 같은 사이트의 웹폰트를 사용했을 때 이와 같은 문제를 발견했었음.(구글 웹폰트는 이런 문제가 발생하지 않았는데 더 고민해봐야 할 부분)
+
+2. Accessibility
+- background 와 버튼의 충분한 대비를 가지고 있지 못한 부분 (진한 red 컬러 아니면 이런 문제가 발생하여 디자인적으로 넘어가기로 결정)
+
+3. Best Practices
+- 이미지 화질 문제 (받아오는 문제라 미해결 부분)
+
+```
 
 ## git convention
 
